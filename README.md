@@ -20,7 +20,7 @@ and finally, validate the successful order message
 
 Output example:
 
-
+```
 » /features/shopping.feature
 Shopping as a anon user
 As a anon user I create an account and complete one order
@@ -40,3 +40,4 @@ As a anon user I create an account and complete one order
    ✓ When I choose my payment method
    ✓ And I click the confirmation order button
    ✓ Then I should see a confirmation message saying Your order on My Store is complete.
+```
