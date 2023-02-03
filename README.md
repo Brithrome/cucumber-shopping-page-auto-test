@@ -1,5 +1,8 @@
 # README
 
+- How to run:
+`npm run wdio`
+
 Test name: 
 
 Test case steps:
