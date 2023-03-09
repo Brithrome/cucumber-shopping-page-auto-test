@@ -1,0 +1,10 @@
+ Feature: Creating my account
+
+    Scenario Outline: As a anon user I create a new account using my email
+ 
+    When I proceed to the checkout
+    Then I create a new account using my <email>
+
+Examples:
+      | email                         |                
+      | brithanyomero@blankfactor.com |

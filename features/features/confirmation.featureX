@@ -1,0 +1,10 @@
+Feature: Order confirmation
+
+  Scenario Outline: As a user I want to see my order confirmation
+
+  When I click the confirmation order button
+    Then I should see a confirmation message saying <message>
+
+  Examples:
+  |message                            |
+  |Your order on My Store is complete.|

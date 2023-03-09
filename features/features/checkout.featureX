@@ -1,0 +1,14 @@
+Feature: Checkout
+
+  Scenario Outline: As a user I want to checkout my order
+
+  Given I select my gender, add my <firstName>, <lastName>, <password> and my <day> <month> and <year> of birth
+      When I add my <company> along with my <address>, <city>, <state>, <postalCode>, my <homePhone> and finally adding my <addressAlias>
+      And I click save
+  When I click Proceed to checkout at the address validation screen
+      And I accept the terms and conditions
+    Then I choose my payment method
+
+Examples:
+      |firstName    |  lastName   |password   |day  |month |year    |company     | address               |city   |state  | postalCode|homePhone  |addressAlias |
+      |Brithany     |  Romero     |Test123$   |4    |11    |2001    |BlankFactor | 8455 NW 68TH ST DORAL |Doral  |Florida| 33166     |7866152466 |Home         |
